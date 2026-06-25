@@ -35,10 +35,10 @@ public class TweenExample : MonoBehaviour {
 ```
 See TweenDemo for a more complex sequence of tweens.
 
-# To Use
+## To Use
 Simply download the repo and add the files to your existing Unity project.
 
-# Custom Tweens
+## Custom Tweens
 To add your own tweens, it's as simple as going to Tween.cs, adding a new tween type, new data if you'd like, and a new case for its combination in the switch-case of SelectLerpApply.
 
 Example of a new case statement
