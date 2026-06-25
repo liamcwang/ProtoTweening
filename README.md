@@ -13,24 +13,23 @@ Features:
 - Easy to understand (Only 4 scripts, one with a lot of boilerplate)
 
 **Example:**  
-Linearly interpolate an object in 3D space in Unity, and have it bounce
+Linearly interpolate an object in 3D space in Unity, and have it bounce at the end.
 ```
 using UnityEngine;
 using ProtoTweening;
 
 public class TweenExample : MonoBehaviour {
-    public Vector3 endPos;
-
     void Start() {
         var startPos = gameObject.transform.position;
+        var endPos = gameObject.transform.position - new Vector3(0, 5, 0);
         var targetTransform = gameObject.transform;
         Tween.PlayMove(
-                targetTransform,
-                startPos, 
-                endPos, 
-                1f, // duration of movement
-                EaseType.EaseOutBounce
-            );
+            targetTransform,
+            startPos, 
+            endPos, 
+            1f, // duration of movement
+            EaseType.EaseOutBounce
+        );
     }
 }
 ```
