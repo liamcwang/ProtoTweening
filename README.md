@@ -54,3 +54,6 @@ case (TweenType.MyTweenType, Action<MyData> ApplyMyData): {
     };
 } break;
 ```
+
+## Remarks
+This library uses Unity Awaitable in order to get its work done. If you dislike async functions in your code, this may not be the right library for you.
